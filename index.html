@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>initial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!--NAVBAR -->
+
+    <div class="div_sup">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Marca y titulo se agrupan para que se 'vea' mejor en dispositivos moviles -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <!--el sr-only para lectores de páginas -->
+                        <span class="sr-only">Toggle navigation</span>
+                        <!-- las rallitas del menu -->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand " href="#">
+                        <img src="games/icon.png" />
+
+                    </a>
+
+                </div>
+
+                <!-- Aqui ponemos todos los links, forms y elementos expandibles -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+
+
+                    <p style="padding-right: 10px; font-weight: bold" class="nav navbar-right navbar-text"><a href="https://medium.com/@SkyorZX">Medium</a></p>
+
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+
+                            <!-- MODAL -->
+
+
+                            <!-- Trigger the modal with a button -->
+                            <button id="sales" style="width: 100%;margin-top:2px;" type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Skyorz</button>
+
+                            <!-- Modal -->
+                            <div id="myModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Skyorz</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p><img class="modal-gif" src="images/5266169+_41911f7b62f54ec4a6808feab8f7f1e4.gif" /></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- FIN DE MODAL -->
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Physical Games<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="page-scroll"><a href="#unfinished-physical-games">Unfinished
+                                </a>
+                                </li>
+                                <li class="page-scroll"><a href="#beaten-physical-games">Beaten</a>
+                                </li>
+                                <li class="page-scroll"><a href="#completed-physical-games">Completed</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="page-scroll"><a href="#unplayed-physical-games">Unplayed</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Digital Games<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="page-scroll"><a href="#unfinished-digital-games">Unfinished
+                                </a>
+                                </li>
+                                <li class="page-scroll"><a href="#beaten-digital-games">Beaten</a>
+                                </li>
+                                <li class="page-scroll"><a href="#completed-digital-games">Completed</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="page-scroll"><a href="#unplayed-digital-games">Unplayed</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- FIN DE NAVBAR -->
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active ">
+                    <img src="games/jumbotron/jumbotron1.png">
+                </div>
+                <div class="item">
+                    <img src="games/jumbotron/jumbotron2.png">
+                </div>
+                <div class="item">
+                    <img src="games/jumbotron/jumbotron3.png">
+                </div>
+
+                <div class="item">
+                    <img src="games/jumbotron/jumbotron4.png">
+                </div>
+
+                <div class="item">
+                    <img src="games/jumbotron/jumbotron5.png">
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="color: red"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color: violet"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <section id="unfinished-physical-games" class="container-fluid">
+            <div class="col-xs-12 page-header well">
+                <h1>Unfinished Games</h1>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 well center">
+                    <p>Hyperdevotion Noire: Godess Black Heart</p>
+                    <div id="contenido3d">
+                        <div id="game">
+                            <div><img src="games/noire.png" class="img-rounded portada" /></div>
+                            <div>
+                                <p class="contraportada">
+                                    The game is a spin-off title of the Hyperdimension Neptunia game series featuring Noire as the main character.
+                                    <br />
+                                    <br /> Genre: Tactical role-playing
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 well center">
+                    <p>Hyperdimension Neptunia Re;birth 2: Sisters Generation</p>
+                    <div id="contenido3d">
+                        <div id="game">
+                            <div><img src="games/neptunia2.png" class="img-rounded portada" /></div>
+                            <div>
+                                <p class="contraportada">
+                                    The year is 20XX, and in an alternate universe from the first game, where Arfoire is dead, a force known as ASIC (Arfoire Syndicate of International Crime), a group solely dedicated towards the deceased Arfoire, has risen, led by CFW Magic.
+                                    <br /> Genre: Role-playing
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 well center">
+                    <p>Sword Art Online: Lost Song</p>
+                    <div id="contenido3d">
+                        <div id="game">
+                            <div><img src="games/saols.png" class="img-rounded portada" /></div>
+                            <div>
+                                <p class="contraportada">
+                                    Lost Song's story is based on Alfheim Online on an alternate timeline of Sword Art Online that does not follow the canon storyline of the light novels.
+                                    <br />
+                                    <br /> Genre: Action role-playing
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="beaten-physical-games" class="container-fluid">
+
+            <div class="col-xs-12 page-header well">
+                <h1>Beaten Games</h1>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 well center">
+                    <p>Hyperdimension Action Neptunia U: Action Unleashed</p>
+                    <div id="contenido3d">
+                        <div id="game">
+                            <div><img src="games/neptuniaU.png" class="img-rounded portada" /></div>
+                            <div>
+                                <p class="contraportada">
+                                    Even in this world the seeds of evil don't die out, monsters that appeared were quickly defeated by the collaboration between the CPUs, not only the goddesses themselves but also the inhabitants of Gamindustri ended up very bored.
+                                    <br /> Genre: Hack and slash
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 well center">
+                    <p>Hyperdimension Neptunia: Producing Perfection</p>
+                    <div id="contenido3d">
+                        <div id="game">
+                            <div><img src="games/neptuniapp.png" class="img-rounded portada" /></div>
+                            <div>
+                                <p class="contraportada">
+                                    All of the sudden an idol game appears and MOB48 is taking shares away from the four goddesses. Players have to help them to get shares back by earning stage points during live performances.
+                                    <br />
+                                    <br /> Genre: Raising simulation
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 well center">
+                    <p>Persona 4: Golden</p>
+                    <div id="contenido3d">
+                        <div id="game">
+                            <div><img src="games/p4golden.png" class="img-rounded portada" /></div>
+                            <div>
+                                <p class="contraportada">
+                                    The main protagonist is a student who moved into the countryside from the city for a year. During his year-long stay, he becomes involved in investigating mysterious murders while harnessing the power of summoning Persona.
+                                    <br /> Genre: Role-playing, Social simulation
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="completed-physical-games" class="container-fluid">
+
+            <div class="col-xs-12 page-header well">
+                <h1>Completed Games</h1>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 well center">
+                    <p>Persona 4 Dancing All Night</p>
+                    <div id="contenido3d">
+                        <div id="game">
+                            <div><img src="games/p4dan.png" class="img-rounded portada" /></div>
+                            <div>
+                                <p class="contraportada">
+                                    Rise has returned to the world of entertainment, and is teaching her friends from Inaba how to dance so they can act as her backup dancers in a live performance at the Love Meets Bonds Festival.
+                                    <br />
+                                    <br /> Genre: Rhythm
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="unplayed-physical-games" class="container-fluid">
+
+            <div class="col-xs-12 page-header well">
+                <h1>Completed Games</h1>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 well center">
+                    <img src="games/new.png" class="new animated infinite pulse" />
+                    <p>Hyperdimension Neptunia Re;birth 3: V Generation</p>
+                    <div id="contenido3d">
+                        <div id="game">
+                            <div><img src="games/neptunia3.png" class="img-rounded portada" /></div>
+                            <div>
+                                <p class="contraportada">
+                                    The activist, Rei Ryghts, acquires a mysterious power and uses it to send Neptune to another dimension where she finds herself back in the 80’s at the beginning of ‘the Console War’ though things are very different in this world.
+                                    <br /> Genre: Role-playing
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="clearfix"></div>
+
+        <section class="container-fluid" data-speed="8" data-type="background" id="unfinished-digital-games">
+
+            <div class="col-xs-12 page-header well">
+                <h1>Unfinished Digital Games</h1>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 well center">
+                    <p>Dead or Alive 5 Plus</p>
+                    <div id="contenido3d">
+                        <div id="gameD">
+                            <div><img src="games/doa.png" class="img-rounded portada" /></div>
+                            <div>
+                                <p class="contraportada">
+                                    The hottest fighters in gaming are back. Knock your opponents of an exotic waterfall, into an exploding oil ring and more. Ninjas, assassins, roughnecks and wrestlers! This is fighting entertainment! This is Dead or Alive!
+                                    <br />
+                                    <br /> Genre: Fighting game
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section class="container-fluid" data-speed="8" data-type="background" id="beaten-digital-games">
+
+            <div class="col-xs-12 page-header well">
+                <h1>Beaten Digital Games</h1>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 well center">
+                    <p>Metal Gear Solid HD Collection</p>
+                    <div id="contenido3d">
+                        <div id="gameD">
+                            <div><img src="games/mgs.png" class="img-rounded portada" /></div>
+                            <div>
+                                <p class="contraportada">
+                                    Metal Gear Solid HD Collection is a compilation of remastered ports of Metal Gear video games
+                                    <br />
+                                    <br /> Action-adventure, stealth
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section class="container-fluid" data-speed="8" data-type="background" id="completed-digital-games">
+
+            <div class="col-xs-12 page-header well">
+                <h1>Completed Digital Games</h1>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 well center">
+                    <p>Hyperdimension Neptunia Re;birth 1</p>
+                    <div id="contenido3d">
+                        <div id="gameD">
+                            <div><img src="games/neptunia1.png" class="img-rounded portada" /></div>
+                            <div>
+                                <p class="contraportada">
+                                    Neptune, one of four goddesses who is involved in a long series of conflicts known as the Console War, after an incident where is defeated following a one on three battle with the other goddesses, she loses consciousness and begins dreaming.
+                                    <br /> Genre: Role-playing
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section class="container-fluid" data-speed="8" data-type="background" id="unplayed-digital-games">
+
+            <div class="col-xs-12 page-header well">
+                <h1>Unplayed Digital Games</h1>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 well center">
+                    <p>Gravity Rush</p>
+                    <div id="contenido3d">
+                        <div id="gameD">
+                            <div><img src="games/gravity.png" class="img-rounded portada" /></div>
+                            <div>
+                                <p class="contraportada">
+                                    The story begins with the player character, a girl called Kat, who has lost her memory. She then runs into a mysterious black cat she names "Dusty" that gives her the power to control gravity.
+                                    <br />
+                                    <br /> Genre: Action-adventure
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <script src="js/jquery-1.11.1.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+        <!-- SMOOTH SCROLL
+        CÓDIGO PARA HACER EL SMOOTH SCROLL
+        (el deslizamiento al elemento del menu)
+    -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="js/boots-scrolling.js"></script>
+        <!-- FIN SMOOTH SCROLL -->
+
+        <!-- INICIO DE LA ANIMACION DEL MENU -->
+        <script src="js/boots-animate-menu.js"></script>
+        <!-- FIN INICIO DE LA ANIMACION DEL MENU -->
+
+        <script src="js/view_source.min.js"></script>
+        <script src="js/jquery.1.11.1.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="js/view_source.min.js"></script>
+         <script>
+        /*
+         *   CÓDIGO NECESARIO QUE HACE EL EFECTO
+         *   PARALLAX
+         */
+        $(document).ready(function () {
+            // cache the window object
+            $window = $(window);
+
+            $('section[data-type="background"]').each(function () {
+                // declare the variable to affect the defined data-type
+                var $scroll = $(this);
+                $scroll.css("min-height", $(window).height());
+
+                $(window).scroll(function () {
+                    // HTML5 proves useful for helping with creating JS functions!
+                    // also, negative value because we're scrolling upwards
+                    var yPos = -($window.scrollTop() / $scroll.data('speed'));
+
+                    // background position
+                    var coords = '50% ' + yPos + 'px';
+
+                    // move the background
+                    $scroll.css({
+                        backgroundPosition: coords
+                    });
+                }); // end window scroll
+            }); // end section function
+        }); // close out script
+
+        /* Create HTML5 element for IE */
+        document.createElement("section");
+    </script>
+
+</body>
+
+</html>

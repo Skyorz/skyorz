@@ -1,0 +1,332 @@
+html,
+body {
+    height: 100%;
+}
+
+section {
+    min-height: 100%;
+    padding: 40px 20px;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+body,
+.panel {
+    color: white;
+    background-color: black;
+}
+
+nav {
+    margin-bottom: 0 !important;
+}
+
+.panel-heading {
+    background: #5a4 !important;
+    color: white !important;
+    font-size: 18px;
+}
+
+.panel-footer {
+    background: black;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.panel-body {
+    text-align: justify;
+}
+
+.navbar-static-top {
+    background: black;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-text,
+.navbar-default .navbar-brand {
+    color: white;
+    background: black;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a {
+    background: black;
+    color: white;
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        background: black;
+        /*padding: 25px 0;*/
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+        background: black;
+    }
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+.navbar-toggle {
+    background-color: black;
+}
+
+.navbar-default {
+    background-color: black;
+}
+
+
+/*----------------------------------------------*/
+
+#contenido3d {
+    perspective: 1000px;
+    height: 100%;
+    height: 250px;
+    margin: 0 auto;
+}
+
+#game {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 5s;
+}
+
+#game div:nth-child(1) {
+    width: 200px;
+    height: 250px;
+    background-color: #061FFF;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#game div:nth-child(2) {
+    width: 200px;
+    height: 250px;
+    background-color: #061FFF;
+    display: block;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateZ(-20px) rotateY(180deg);
+}
+
+#game div:nth-child(3) {
+    width: 20px;
+    height: 250px;
+    background-color: #061FFF;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-109px, -50%) translateZ(-10px) rotateY(90deg);
+}
+
+.portada {
+    width: 95%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#game:hover {
+    transform: rotateY(180deg);
+    transition: 5s;
+}
+
+.contraportada {
+    width: 95%;
+    height: 95%;
+    color: black;
+    margin-top: 5px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    text-align: left;
+}
+
+
+/* JUEGO DIGITAL */
+
+
+#gameD {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 5s;
+}
+
+#gameD div:nth-child(1) {
+    width: 200px;
+    height: 250px;
+    background-color: #BBB;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#gameD div:nth-child(2) {
+    width: 200px;
+    height: 250px;
+    background-color: #BBB;
+    display: block;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateZ(-20px) rotateY(180deg);
+}
+
+#gameD div:nth-child(3) {
+    width: 20px;
+    height: 250px;
+    background-color: #BBB;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-109px, -50%) translateZ(-10px) rotateY(90deg);
+}
+
+.portada {
+    width: 95%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#gameD:hover {
+    transform: rotateY(180deg);
+    transition: 5s;
+}
+
+
+/* JUEGO DIGITAL */
+
+
+
+/*----------------------------------------------*/
+
+
+/* PARALLAX */
+
+#unfinished-digital-games {
+    background: url(games/parallax3.png) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    padding: 50px 0;
+}
+
+#beaten-digital-games {
+    background: url(games/parallax1.png) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    padding: 50px 0;
+}
+
+#completed-digital-games {
+    background: url(games/parallax4.png) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    padding: 50px 0;
+}
+
+#unplayed-digital-games {
+    background: url(games/parallax2.png) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    padding: 50px 0;
+}
+
+
+/* PARALLAX */
+
+.title {
+    color: white;
+    text-align: center;
+    background-color: #000008;
+    padding: 5px;
+}
+
+#unfinished-physical-games {
+    background-color: #061F5E;
+}
+
+#beaten-physical-games {
+    background-color: #061050;
+}
+
+#completed-physical-games {
+    background-color: #061030;
+}
+
+#unplayed-physical-games {
+    background-color: #000;
+}
+
+.well {
+    background-color: #000008;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    margin-bottom: 0px;
+}
+
+.modal-backdrop.in {
+    z-index: auto;
+}
+
+.new {
+    position: absolute;
+    right: 0px;
+    width: 20%;
+}
