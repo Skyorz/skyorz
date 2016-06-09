@@ -244,7 +244,7 @@ nav {
 /* PARALLAX */
 
 #unfinished-digital-games {
-    background: url(games/parallax3.png) 50% 0 fixed;
+    background: url(../games/parallax3.png) 50% 0 fixed;
     height: auto;
     margin: 0 auto;
     width: 100%;
@@ -254,7 +254,7 @@ nav {
 }
 
 #beaten-digital-games {
-    background: url(games/parallax1.png) 50% 0 fixed;
+    background: url(../games/parallax1.png) 50% 0 fixed;
     height: auto;
     margin: 0 auto;
     width: 100%;
@@ -264,7 +264,7 @@ nav {
 }
 
 #completed-digital-games {
-    background: url(games/parallax4.png) 50% 0 fixed;
+    background: url(../games/parallax4.png) 50% 0 fixed;
     height: auto;
     margin: 0 auto;
     width: 100%;
@@ -274,7 +274,7 @@ nav {
 }
 
 #unplayed-digital-games {
-    background: url(games/parallax2.png) 50% 0 fixed;
+    background: url(../games/parallax2.png) 50% 0 fixed;
     height: auto;
     margin: 0 auto;
     width: 100%;
